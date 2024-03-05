@@ -1,6 +1,6 @@
 # bonus_allocation
 
-Code and data for: Xiang, Y., Landy, J., Cushman, F.A., Vélez, N., & Gershman, S.J. (submitted). People reward others based on their willingness to exert effort.
+Code and data for: People reward others based on their willingness to exert effort.
 
 
 
