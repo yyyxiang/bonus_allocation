@@ -70,6 +70,6 @@ dat <- read.csv('./../Data/exp2a+2b.csv', header = T, stringsAsFactors = T) %>%
 
 for (idx in c('2a', '2b')) {
   lme <- lmer(bonus ~ effort*is_secret + condition + (effort*is_secret|subject) + (condition|subject), 
-              data = dat %>% filer(exp_index == idx))
+              data = dat %>% filter(exp_index == idx))
   print(summary(lme))
 }
