@@ -210,7 +210,7 @@ bic_plot <- function(dat) {
     ggplot(aes(model, BIC, color = model)) +
     geom_point(size = 3) +
     facet_wrap(~ exp_index, nrow = 2, scales = 'free_y',
-               labeller = as_labeller(c(`1a`='Bonus Exp 1a', `1b`='Bonus Exp 1b', `2a`='Responsibility', `2b`='Responsibility'))) +
+               labeller = as_labeller(c(`1a`='Exp 1a Bonus', `1b`='Exp 1b Bonus', `2a`='Responsibility', `2b`='Responsibility'))) +
     theme_bw() +
       labs(x = 'Model')
     )
@@ -267,7 +267,7 @@ single_participant_bic_plot <- function(dat) {
                   position = position_dodge(.9)) +
     coord_cartesian(ylim = c(NA,1)) +
     facet_wrap(~ exp_index, nrow = 2,
-               labeller = as_labeller(c(`1a`='Bonus Exp 1a', `1b`='Bonus Exp 1b', `2a`='Responsibility', `2b`='Responsibility'))) +
+               labeller = as_labeller(c(`1a`='Exp 1a Bonus', `1b`='Exp 1b Bonus', `2a`='Responsibility', `2b`='Responsibility'))) +
     theme_bw() +
     scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
       labs(x = 'Model', y = 'Proportion')
@@ -322,7 +322,7 @@ cor_plt <- function(data, x, y, ymin, ymax, text_data) {
       coord_fixed() +
       facet_wrap(~ model, nrow = 3, strip.position ='right',
                  labeller = as_labeller(c(`E` = 'Effort', `BA` = 'BA counterfactual', `EBA` = 'Ensemble',
-                                          `1a` = 'Bonus Exp 1a', `1b` = 'Bonus Exp 1b', `2a` = 'Responsibility', `2b` = 'Responsibility'))) +
+                                          `1a` = 'Exp 1a Bonus', `1b` = 'Exp 1b Bonus', `2a` = 'Responsibility', `2b` = 'Responsibility'))) +
       theme_bw() +
       geom_text(data = text_data,
                 mapping = aes(label = text, x = x , y = y),
