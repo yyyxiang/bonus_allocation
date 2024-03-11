@@ -15,8 +15,8 @@ dat <- dat %>% mutate(type = case_when(s1 == s2 ~ 'Same strength',
                                        T ~ 'Same force'))
 
 # Line plots
-p1_1a_bonus <- line_plots(dat, '1a', 'bonus', 'Bonus', 'Bonus Exp 1a')
-p1_1b_bonus <- line_plots(dat, '1b', 'bonus', 'Bonus', 'Bonus Exp 1b')  
+p1_1a_bonus <- line_plots(dat, '1a', 'bonus', 'Bonus', 'Exp 1a Bonus')
+p1_1b_bonus <- line_plots(dat, '1b', 'bonus', 'Bonus', 'Exp 1b Bonus')  
 
 dat <- merge(dat, model_predictions) %>% 
   dplyr::rename(response = bonus) %>% 
@@ -57,8 +57,8 @@ dat <- dat %>% mutate(type = case_when(s1 == s2 ~ 'Same strength',
                                        e1 == e2 ~ 'Same effort',
                                        T ~ 'Same force'))
 
-p1_2a_resp <- line_plots(dat, '2a', 'resp', 'Responsibility', 'Responsibility Exp 2a')
-p1_2b_resp <- line_plots(dat, '2b', 'resp', 'Responsibility', 'Responsibility Exp 2b')  
+p1_2a_resp <- line_plots(dat, '2a', 'resp', 'Responsibility', 'Responsibility')
+p1_2b_resp <- line_plots(dat, '2b', 'resp', 'Responsibility', 'Responsibility')  
 
 dat <- merge(dat, model_predictions) %>% 
   dplyr::rename(response = resp) %>% 
