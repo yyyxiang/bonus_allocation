@@ -146,20 +146,14 @@ line_plots <- function(dat, idx, y, y_label, title) {
       subplot_a1 + scale_x_discrete(labels=c("1" = "Less effort", "2" = "More effort")) +
         labs(x = NULL, y = y_label, title = title) +
         theme(legend.position = 'none', 
-              plot.title = element_text(hjust = 0.5),
-              strip.background = element_blank(),
-              strip.text = element_blank()) +
+              plot.title = element_text(hjust = 0.5)) +
         
         subplot_b1 + scale_x_discrete(labels=c("1" = "Less strength", "2" = "More strength")) +
         labs(x = NULL, y = y_label) +
-        theme(strip.background = element_blank(),
-              strip.text = element_blank()) +
         
         subplot_c1 + scale_x_discrete(labels=c("1" = "Less strength/\nmore effort", "2" = "More strength/\nless effort")) +
         labs(x = 'Contestant', y = y_label) +
-        theme(legend.position = 'none',
-              strip.background = element_blank(),
-              strip.text = element_blank()) +
+        theme(legend.position = 'none') +
         
         plot_layout(nrow = 3)
     )
