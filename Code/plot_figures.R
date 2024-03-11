@@ -34,14 +34,14 @@ dat_merge_long <- merge_long(dat, model_predictions)
 text_labels <- correlations(dat_merge_long)
 
 p4_1a_bonus <- cor_plt(dat_merge_long %>% filter(exp_index == '1a'), 'prediction', 'avg_response', 'lci_response', 'uci_response', text_labels %>% filter(exp_index == '1a')) +
-  labs(title = 'Bonus Exp 1a', x = 'Model', y = 'Data') +
+  labs(title = 'Exp 1a Bonus', x = 'Model', y = 'Data') +
   theme(strip.background = element_blank(),
         strip.text = element_blank(),
         plot.title = element_text(hjust = 0.5),
         legend.position = 'none')
 
 p4_1b_bonus <- cor_plt(dat_merge_long %>% filter(exp_index == '1b'), 'prediction', 'avg_response', 'lci_response', 'uci_response', text_labels %>% filter(exp_index == '1b')) +
-  labs(title = 'Bonus Exp 1b', x = 'Model', y = NULL) + 
+  labs(title = 'Exp 1b Bonus', x = 'Model', y = NULL) + 
   theme(strip.background = element_blank(),
         strip.text = element_blank(),
         plot.title = element_text(hjust = 0.5),
