@@ -1,7 +1,5 @@
 library('tidyverse')
 library('lmerTest')
-library('Rmisc')
-library('patchwork')
 source('helper.R')
 
 ### Exp1a and Exp1b
