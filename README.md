@@ -1,4 +1,4 @@
-# bonus_allocation
+# People reward others based on their willingness to exert effort
 
 Code and data for: Xiang, Y., Landy, J., Cushman, F.A., Vélez, N., & Gershman, S.J. (in press). People reward others based on their willingness to exert effort. _Journal of Experimental Social Psychology._
 
